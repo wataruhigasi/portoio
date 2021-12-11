@@ -7,6 +7,7 @@
     ></introduction>
     <biography id="biography" style="width: 90%; margin: auto"></biography>
     <activity id="activity" style="width: 90%; margin: auto"></activity>
+    <production id="production" style="width: 90%; margin: auto"></production>
   </div>
 </template>
 
@@ -15,6 +16,7 @@ import TopPage from "../components/TopPage";
 import Introduction from "../components/Introduction";
 import Biography from "../components/Biography";
 import Activity from "../components/Activity";
+import Production from "../components/Production";
 
 export default {
   components: {
@@ -22,6 +24,7 @@ export default {
     Introduction,
     Biography,
     Activity,
+    Production,
   },
   data() {
     return {};
