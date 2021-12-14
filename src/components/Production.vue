@@ -36,11 +36,13 @@ export default {
           title: "ScoreBoard",
           text: "vueを用いたScoreBoard",
           link: "https://github.com/wataruhigasi/scoreboard",
+          description: "ソースコードへ",
         },
         {
           title: "LineBot",
           text: "LineBotを用いた家計簿",
           link: "https://github.com/wataruhigasi/LINEKakeibo",
+          description: "ソースコードへ",
         },
       ],
     };

@@ -36,7 +36,7 @@ export default {
         },
         {
           title: "活動",
-          img: require("@/assets/hack.jpg"),
+          img: require("@/assets/hack1.jpg"),
           scroll: "#activity",
         },
         {

@@ -32,13 +32,13 @@ export default {
   data() {
     return {};
   },
-  // methods: {
-  //   toScroll(val) {
-  //     const element = document.getElementById(val);
-  //     const topPosition = element.getBoundingClientRect().top;
-  //     window.scrollTo(0, topPosition);
-  //   },
-  // },
+  methods: {
+    toScroll(val) {
+      const element = document.getElementById(val);
+      const topPosition = element.getBoundingClientRect().top;
+      window.scrollTo(0, topPosition);
+    },
+  },
 };
 </script>
 

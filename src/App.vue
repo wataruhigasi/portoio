@@ -1,55 +1,55 @@
 <template>
   <v-app>
-    <v-app-bar
-      app
-      color="primary"
-      dark
-    >
-      <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
-
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
-      </div>
-
-      <v-spacer></v-spacer>
-
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
-    </v-app-bar>
-
-    <v-main>
-      <router-view/>
-    </v-main>
+    <v-card class="overflow-hidden" style="height: 100%">
+      <v-app-bar fixed color="#00000000" flat style="min-width: 200px">
+        <v-toolbar-title
+          style="color: black; font-size: 36px; font-weight: bold"
+          v-scroll-to="'#topPage'"
+          to
+          >PORTFOLIO</v-toolbar-title
+        >
+        <v-spacer></v-spacer>
+        <v-btn icon large @click="openTab('github')">
+          <v-icon style="color: black"> mdi-github </v-icon>
+        </v-btn>
+        <v-btn icon large @click="openTab('twitter')">
+          <v-icon style="color: black"> mdi-twitter </v-icon>
+        </v-btn>
+      </v-app-bar>
+      <v-sheet style="margin-top: 64px" id="scrolling">
+        <v-main>
+          <transition name="fade">
+            <router-view v-show="show"></router-view>
+          </transition>
+          <footer style="position: relative; margin-bottom: 0" id="content1">
+            © 2021 Honda Daiki
+          </footer>
+        </v-main>
+      </v-sheet>
+    </v-card>
   </v-app>
 </template>
 
 <script>
-
 export default {
-  name: 'App',
-
+  name: "App",
   data: () => ({
-    //
+    show: true,
+    collapseOnScroll: true,
+    navi: false,
   }),
+  created() {},
+  methods: {
+    openTab(val) {
+      switch (val) {
+        case "github":
+          window.open("https://github.com/wataruhigasi");
+          return;
+        case "twitter":
+          window.open("https://twitter.com/ayu97985116");
+          return;
+      }
+    },
+  },
 };
 </script>
