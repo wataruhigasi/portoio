@@ -12,25 +12,45 @@
             </ruby>
           </div>
           <div>
-            <ruby style="ruby-position: under; font-size: 32px" class="topic">
+            <ruby
+              style="ruby-position: under; font-size: 32px"
+              class="topic"
+              v-scroll-to="'#introduction'"
+              to
+            >
               自己紹介
               <rt style="color: gray">Introduction</rt>
             </ruby>
           </div>
           <div>
-            <ruby style="ruby-position: under; font-size: 32px" class="topic">
+            <ruby
+              style="ruby-position: under; font-size: 32px"
+              class="topic"
+              v-scroll-to="'#biography'"
+              to
+            >
               略歴
               <rt style="color: gray">Biography</rt>
             </ruby>
           </div>
           <div>
-            <ruby style="ruby-position: under; font-size: 32px" class="topic">
+            <ruby
+              style="ruby-position: under; font-size: 32px"
+              class="topic"
+              v-scroll-to="'#activity'"
+              to
+            >
               活動
               <rt style="color: gray">Activity</rt>
             </ruby>
           </div>
           <div>
-            <ruby style="ruby-position: under; font-size: 32px" class="topic">
+            <ruby
+              style="ruby-position: under; font-size: 32px"
+              class="topic"
+              v-scroll-to="'#production'"
+              to
+            >
               製作物
               <rt style="color: gray">Production</rt>
             </ruby>

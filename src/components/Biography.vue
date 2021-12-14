@@ -14,8 +14,9 @@
 
 <style scoped>
 .biography {
-  width: 100%;
-  background-size: 45% auto;
+  width: 300%;
+  background: url(../assets/barth.jpg) no-repeat 0px 100%;
+  background-size: 30% auto;
 }
 .topic {
   margin-left: 12px;

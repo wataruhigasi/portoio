@@ -18,6 +18,7 @@
 <style scoped>
 .introduction {
   width: 100%;
+  background: url(../assets/introduction.jpg) no-repeat 100% 100%;
   background-size: 45% auto;
 }
 .topic {

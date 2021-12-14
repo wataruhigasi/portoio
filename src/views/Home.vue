@@ -1,6 +1,7 @@
 <template>
   <div>
     <top-page id="topPage" style="width: 90%; margin: auto"></top-page>
+    <scroll style="width: 90%; margin: auto"></scroll>
     <introduction
       id="introduction"
       style="width: 90%; margin: auto"
@@ -17,6 +18,7 @@ import Introduction from "../components/Introduction";
 import Biography from "../components/Biography";
 import Activity from "../components/Activity";
 import Production from "../components/Production";
+import Scroll from "../components/Scroll";
 
 export default {
   components: {
@@ -25,6 +27,7 @@ export default {
     Biography,
     Activity,
     Production,
+    Scroll,
   },
   data() {
     return {};
